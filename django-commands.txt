@@ -1,0 +1,6 @@
+python -m django --version
+django-admin
+jango-admin startproject django_project 
+
+
+# deployment to heroku
