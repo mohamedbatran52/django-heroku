@@ -4,3 +4,12 @@ jango-admin startproject django_project
 
 
 # deployment to heroku
+# to settings.py
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+ALLOWED_HOSTS = ['djangoheroku1991.herokuapp.com', '127.0.0.1']
+
+
+# to Procfile
+web: gunicorn django_project.wsgi
+
+
