@@ -13,3 +13,8 @@ ALLOWED_HOSTS = ['djangoheroku1991.herokuapp.com', '127.0.0.1']
 web: gunicorn django_project.wsgi
 
 
+python manage.py makemigrations 
+python manage.py migrate 
+python manage.py createsuperuser
+
+
