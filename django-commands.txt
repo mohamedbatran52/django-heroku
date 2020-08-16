@@ -17,4 +17,14 @@ python manage.py makemigrations
 python manage.py migrate 
 python manage.py createsuperuser
 
+python manage.py sqlmigrate blog 0001
 
+# shell stuff
+python manage.py shell 
+from blog.models import Post
+from django.contrib.auth.models import User
+User.objects.filter(username='batran')     
+
+
+user.post_set.all()
+Post.objects.all().first().author.email
